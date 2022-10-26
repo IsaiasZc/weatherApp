@@ -94,14 +94,14 @@ export class Weather {
 
     for (let key in this.imgs.special) {
       if(key === id.toString()) {
-        return `../img/${this.imgs.special[key]}.png`
+        return `./img/${this.imgs.special[key]}.png`
       }
     }
 
     for (let key in this.imgs.simple) {
 
       if(key[0] === id.toString()[0]) {
-        return `../img/${this.imgs.simple[key]}.png`
+        return `./img/${this.imgs.simple[key]}.png`
       }
     }
     
